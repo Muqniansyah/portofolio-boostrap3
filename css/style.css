@@ -1,0 +1,151 @@
+/*jumbotron*/
+.jumbotron {
+	background-color: #1A55E4FF;
+}
+
+.jumbotron img {
+	width: 200px;
+	border: 5px solid white;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+.jumbotron h1, .jumbotron p {
+	color: #404040FF;
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+/*akhir jumbotron*/
+
+/*efek parallax fixed background and scrolling body(efek parallax yang pertama).*/
+.jumbotron {
+	background-image: url('../img/header.jpg');
+	background-attachment: fixed;
+		/*supaya posisinya memenuhi layar pakai background-size: cover;*/
+	background-size: cover;
+		/*supaya posisi objek terlihat bisa memakai background-position dengan mengatur 
+		posisi secara horizontal dan posisi secara vertikal.*/
+	background-position: 0 -100px;
+		/*untuk mengatur tinggi jumbotron*/
+	height: 450px;
+		/*untuk membuat elemen yang keluar dari jumbotron disembunyikan*/
+	overflow: hidden;
+}
+/*akhir efeknya*/
+
+/*about*/
+.about hr {
+	width: 250px;
+	border: 2px solid #1A55E4FF;
+}
+
+.about h2 {
+	color: #1A55E4FF;
+}
+
+/*efek parallax yang keempat*/
+.pKiri, .pKanan {
+	opacity: 0;
+	transform: translate(-50px, 0) rotate(15deg);
+	transition: 1s;
+}
+
+.pKanan {
+	transform: translate(50px, 0) rotate(-15deg);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+/*akhir efeknya*/
+/*akhir about*/
+
+section {
+	min-height: 600px;
+}
+
+/*portofolio*/
+.portofolio {
+	background-color: #1A55E4FF;
+}
+
+/*efek parallax landing page(efek parallax yang ketiga).*/
+.portofolio .thumbnail {
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+
+.portofolio .thumbnail.muncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+/*akhir efeknya*/
+
+.portofolio hr {
+	width: 250px;
+	border: 2px solid white;
+}
+
+.portofolio h2 {
+	color: white;
+}
+
+.portofolio img {
+	width: 445px;
+	height: 200px;
+}
+/*akhir portofolio*/
+
+/*contact*/
+.contact hr {
+	width: 250px;
+	border: 2px solid #1A55E4FF;
+}
+
+.contact h2 {
+	color: #1A55E4FF;
+}
+
+.contact {
+	min-height: 800px;
+}
+/*akhir contact*/
+
+/*footer*/
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 120px;
+	background-color: #C0C0C0FF;
+	padding-top: 30px; 
+}
+
+footer p {
+	color: #545454FF;
+	font-size: 0.9em;
+}
+
+footer p i {
+	color: salmon;
+}
+		/*cara untuk membuat container dari static footer jadi non static*/
+html {
+	position: relative;
+}
+		/*untuk ngakalinnya margin bottomnya diisi dengan sama yang tinggi dari footernya. supaya nanti  footernya
+		pasti dibawah*/
+body {
+	margin-bottom: 120px;
+	margin-top: 40px;
+}
+		/*caranya selesai untuk membuat container dari static footer jadi non static*/
+
+/*akhir footer*/
+
+
+
+
+
+
+
